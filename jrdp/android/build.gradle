@@ -20,6 +20,22 @@ android {
         minSdkVersion 9
         targetSdkVersion 19
     }
+
+    signingConfigs {
+        release {
+            storeFile file(project.property("jrdp.keystore"))
+            storePassword project.property("jrdp.password")
+            keyAlias project.property("jrdp.alias")
+            keyPassword project.property("jrdp.password")
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            signingConfig signingConfigs.release
+        }
+    }
 }
 
 dependencies {
