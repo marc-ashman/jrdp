@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-	Be sure to modify all related arrays as they are interdependent. Modifying one without changing anything
+	in any related arrays will cause a guaranteed bug in all array processing.
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ -->
+
+<resources>
+    <string-array name="resolution_array">
+        <item>800x600</item>
+        <item>960x600</item>
+        <item>1024x768</item>
+        <item>1280x720</item>
+        <item>1280x768</item>
+        <item>1280x800</item>
+        <item>1280x1024</item>
+        <item>1366x768</item>
+    </string-array>
+    <integer-array name="resolution_x_values">
+        <item>800</item>
+        <item>960</item>
+        <item>1024</item>
+        <item>1280</item>
+        <item>1280</item>
+        <item>1280</item>
+        <item>1280</item>
+        <item>1366</item>
+    </integer-array>
+    <integer-array name="resolution_y_values">
+        <item>600</item>
+        <item>600</item>
+        <item>768</item>
+        <item>720</item>
+        <item>768</item>
+        <item>800</item>
+        <item>1024</item>
+        <item>768</item>
+    </integer-array>
+    <string-array name="encryption_array">
+    	<item>None</item>
+    	<item>40 Bit</item>
+    	<item>56 Bit</item>
+    	<item>128 Bit</item>
+    	<item>FIPS</item>
+    </string-array>
+    <integer-array name="encryption_values">
+    	<item>0</item>
+    	<item>1</item>
+    	<item>9</item>
+    	<item>11</item>
+    	<item>27</item>
+    </integer-array>
+    <string-array name="color_depth_array">
+    	<item>15 Bit (High Color)</item>
+    	<item>16 Bit (High Color)</item>
+    	<item>24 Bit (TrueColor)</item>
+    </string-array>
+    <integer-array name="color_depth_values">
+    	<item>15</item>
+    	<item>16</item>
+    	<item>24</item>
+    </integer-array>
+</resources>

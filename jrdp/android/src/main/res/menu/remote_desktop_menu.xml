@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/menuShowKeyboard"
+		android:title="@string/menu_show_keyboard"
+		android:titleCondensed="@string/menu_show_keyboard"
+		android:icon="@drawable/menu_keyboard" />
+	<item
+		android:id="@+id/menuShowInputField"
+		android:title="@string/menu_show_input_field"
+		android:titleCondensed="@string/menu_show_input_field"
+		android:icon="@drawable/menu_keyboard" />
+	<item
+		android:id="@+id/menuShowWinKeyboard"
+		android:title="@string/menu_show_win_keyboard"
+		android:titleCondensed="@string/menu_show_win_keyboard"
+		android:icon="@drawable/menu_keyboard" />
+	<item
+		android:id="@+id/menuDisconnect"
+		android:title="@string/menu_disconnect"
+		android:titleCondensed="@string/menu_disconnect"
+		android:icon="@drawable/menu_disconnect" />
+	<item
+		android:id="@+id/menuZoom"
+		android:title="@string/menu_zoom"
+		android:titleCondensed="@string/menu_zoom"
+		android:icon="@drawable/menu_zoom" />
+	<item
+		android:id="@+id/menuScreenshot"
+		android:title="@string/menu_screenshot"
+		android:icon="@drawable/menu_screenshot"
+		android:titleCondensed="@string/menu_zoom"
+		android:enabled="false" />
+	<item
+		android:id="@+id/menuStats"
+		android:title="@string/menu_stats"
+		android:icon="@drawable/menu_stats"
+		android:titleCondensed="@string/menu_zoom"
+		android:enabled="false" />
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/contextMenuConnect"
+		android:title="@string/menu_connect"
+		android:titleCondensed="@string/menu_connect" />
+	<item
+		android:id="@+id/contextMenuEditConnection"
+		android:title="@string/menu_edit_connection"
+		android:titleCondensed="@string/menu_edit_connection" />
+	<item
+		android:id="@+id/contextMenuDeleteConnection"
+		android:title="@string/menu_delete_connection"
+		android:titleCondensed="@string/menu_delete_connection" />
+</menu>

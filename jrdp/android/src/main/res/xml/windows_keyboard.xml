@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="50dip" >
+    <Row>
+        <Key android:codes="1" android:keyLabel="@string/keyboard_delete" android:keyEdgeFlags="left"/>
+        <Key android:codes="2" android:keyLabel="^" />
+        <Key android:codes="3" android:keyLabel="@string/keyboard_home" android:keyWidth="15%p" />
+        <Key android:codes="4" android:keyLabel="@string/keyboard_end" android:keyWidth="11%p" />
+        <Key android:codes="5" android:keyLabel="@string/keyboard_page_up" android:keyWidth="15%p" />
+        <Key android:codes="6" android:keyLabel="@string/keyboard_page_down" android:keyWidth="15%p" />
+        <Key android:codes="7" android:keyLabel="@string/keyboard_alt" android:keyWidth="12%p"
+        		android:isModifier="true" android:isSticky="true" />
+        <Key android:codes="8" android:keyLabel="@string/keyboard_ctrl" android:keyWidth="12%p"
+        		android:isModifier="true" android:isSticky="true" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="9"  android:keyLabel="L" android:keyEdgeFlags="left" />
+        <Key android:codes="10" android:keyLabel="D" />
+        <Key android:codes="11" android:keyLabel="R" />
+        <Key android:codes="12" android:keyLabel="@string/keyboard_esc" android:keyWidth="13%p" />
+        <Key android:codes="13" android:keyLabel="@string/keyboard_tab" android:keyWidth="13%p" />
+        <Key android:codes="14" android:keyLabel="@string/keyboard_windows" android:keyWidth="13%p" />
+        <Key android:codes="15" android:keyLabel="@string/keyboard_shift" android:keyWidth="16%p"
+        		android:isModifier="true" android:isSticky="true" />
+        <Key android:codes="16" android:keyLabel="@string/keyboard_hide" android:keyWidth="15%p"
+        		android:keyEdgeFlags="right" />
+    </Row>
+</Keyboard>
+    

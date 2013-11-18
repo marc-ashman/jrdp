@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/quickConnectLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_weight="1"
+		android:fillViewport="true"
+		android:background="@drawable/background">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:padding="5dp">
+			<TextView
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/quick_connect"
+				android:textColor="#000000" />
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/server"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/server_required"
+					android:text="@string/required_indicator"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#ff0000"
+					android:visibility="invisible" />
+			</LinearLayout>
+			<EditText
+				android:id="@+id/server_field"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/server_hint"
+				android:inputType="text" />
+				
+			<!-- Port  -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/port"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+				<TextView
+					android:id="@+id/port_required"
+					android:text="@string/required_indicator"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#ff0000"
+					android:visibility="invisible" />
+			</LinearLayout>
+			<EditText
+				android:id="@+id/port_field"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/port_hint"
+				android:inputType="number"
+				
+				android:text="3389" />
+		</LinearLayout>
+	</ScrollView>
+
+	<!-- Connect/Save Button Bar -->
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		style="@android:style/ButtonBar" >
+		<Button
+			android:id="@+id/connect_button"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/connect_now" />
+	</LinearLayout>
+</LinearLayout>

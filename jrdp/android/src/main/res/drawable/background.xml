@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Found this out with the help of:
+	http://developer.android.com/resources/articles/window-bg-speed.html
+-->
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/form_background"
+    android:tileMode="repeat" />

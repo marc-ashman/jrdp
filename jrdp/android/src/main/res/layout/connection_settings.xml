@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/connectionSettingsLayout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical" >
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="1px"
+		android:layout_weight="1"
+		android:fillViewport="true"
+		android:background="@drawable/background">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:padding="5dp">
+			
+			<!-- Server -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/server"
+					android:textColor="#000000" />
+				<TextView
+					android:id="@+id/server_required"
+					android:text="@string/required_indicator"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#ff0000"
+					android:visibility="invisible" />
+			</LinearLayout>
+			<EditText
+				android:id="@+id/server_field"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/server_hint"
+				android:inputType="text" />
+				
+			<!-- Port  -->
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/port"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+				<TextView
+					android:id="@+id/port_required"
+					android:text="@string/required_indicator"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="#ff0000"
+					android:visibility="invisible" />
+			</LinearLayout>
+			<EditText
+				android:id="@+id/port_field"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:hint="@string/port_hint"
+				android:inputType="number"
+				
+				android:text="3389" />
+				
+			<!-- Username  -->
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:text="@string/username"
+				android:textColor="#000000"
+				android:paddingTop="5dp" />
+			<EditText
+				android:id="@+id/username_field"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:inputType="text" />
+				
+			<!-- Password  -->
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:text="@string/password"
+				android:textColor="#000000"
+				android:paddingTop="5dp" />
+			<EditText
+				android:id="@+id/password_field"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:inputType="textPassword" />
+				
+			<!-- Extra Options Expander :: Minimized -->
+			<LinearLayout
+				android:id="@+id/minimized_layout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:visibility="visible" >
+				<ImageView
+					android:id="@+id/minimizedImage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:src="@drawable/expander_minimized"
+					android:clickable="true" />
+				<TextView
+					android:id="@+id/minimizedText"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/show_extra"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+			</LinearLayout>
+			
+			<!-- Extra Options Expander :: Expanded -->
+			<LinearLayout
+				android:id="@+id/maximized_layout"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="gone" >
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal" >
+					<ImageView
+						android:id="@+id/maximizedImage"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:src="@drawable/expander_maximized"
+						android:clickable="true" />
+					<TextView
+						android:id="@+id/maximizedText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"
+						android:text="@string/hide_extra"
+						android:textColor="#000000"
+						android:paddingTop="5dp" />
+				</LinearLayout>
+				
+				<!-- Domain  -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/domain"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+				<EditText
+					android:id="@+id/domain_field"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:singleLine="true"
+					android:inputType="text" />
+				
+				<!-- Screen Resolution -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/resolution"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+				<Spinner
+					android:id="@+id/reolution_spinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/resolution_prompt" />
+				
+				<!-- Encryption Level -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/encryption"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+				<Spinner
+					android:id="@+id/encryption_spinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/encryption_prompt" />
+				
+				<!-- Color Depth -->
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:text="@string/color_depth"
+					android:textColor="#000000"
+					android:paddingTop="5dp" />
+				<Spinner
+					android:id="@+id/color_depth_spinner"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:prompt="@string/color_depth_prompt" />
+				
+					
+				
+			</LinearLayout>
+			
+			
+			
+		</LinearLayout>
+	</ScrollView>
+
+	<!-- Connect/Save Button Bar -->
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		style="@android:style/ButtonBar" >
+		<Button
+			android:id="@+id/connect_button"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="@string/connect_now" />
+	</LinearLayout>
+</LinearLayout>

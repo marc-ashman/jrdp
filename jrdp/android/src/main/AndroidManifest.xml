@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jrdp.client.android"
+      android:versionCode="1"
+      android:versionName="1.0" >
+    <application android:icon="@drawable/icon"
+                 android:label="@string/app_name">
+        <activity android:name=".ConnectionListActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConnectionSettingsActivity"
+                  android:label="@string/edit_connection_settings"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize"
+                  android:noHistory="true">
+        </activity>
+        <activity android:name=".RemoteDesktopActivity"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity android:name=".QuickConnectActivity"
+                  android:label="@string/quick_connect"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:windowSoftInputMode="adjustResize">
+        </activity>
+	</application>
+    <uses-sdk android:minSdkVersion="6"/>
+	<uses-permission android:name="android.permission.INTERNET" />
+</manifest> 

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rdpLayout"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:focusableInTouchMode="false" >
+	<LinearLayout
+		android:id="@+id/extraContent"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" >
+		<RelativeLayout
+			android:id="@+id/inputContent"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:visibility="gone" >
+			<Button
+				android:id="@+id/inputHideButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="@string/hide" />
+			<Button
+				android:id="@+id/inputSendButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/inputHideButton"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="@string/send" />
+			<EditText
+				android:id="@+id/editText"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/inputSendButton"
+				android:layout_alignParentLeft="true"
+				android:inputType="textMultiLine"
+				android:imeOptions="actionSend|flagNoEnterAction" />
+		</RelativeLayout>
+		<RelativeLayout
+			android:id="@+id/zoomContent"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:focusableInTouchMode="false"
+			android:visibility="gone" >
+			<Button
+				android:id="@+id/zoomHideButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="@string/hide" />
+			<Button
+				android:id="@+id/originalScaleButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/zoomHideButton"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:text="@string/original_zoom_label" />
+			<TextView
+				android:id="@+id/zoomLabel"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@id/originalScaleButton"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:text="@string/zoom_label" />
+			<SeekBar
+				android:id="@+id/zoomBar"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@id/originalScaleButton"
+				android:layout_below="@id/zoomLabel"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp" />
+		</RelativeLayout>
+		<com.jrdp.client.android.WindowsKeyboardView
+			android:id="@+id/keyboardView"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentBottom="true"
+			android:visibility="gone" />
+	</LinearLayout>
+	<com.jrdp.client.android.RemoteDesktopView
+		android:id="@+id/remoteView"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/extraContent"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:imeOptions="flagNoExtractUi" />
+</RelativeLayout>
