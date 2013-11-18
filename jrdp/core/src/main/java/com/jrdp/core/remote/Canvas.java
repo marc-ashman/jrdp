@@ -1,3 +1,19 @@
+/*
+ * Copyright (C) 2013 JRDP Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.jrdp.core.remote;
 
 import com.jrdp.core.remote.rdp.Cursor;
@@ -16,37 +32,3 @@ public interface Canvas
 	public int getCursorX();
 	public int getCursorY();
 }
-
-//Old, but functional... why delete them - may be useful some day...
-//-----------------------------------------------------------------------------
-//public void setCanvasBottomUp(int[] img, int width, int height, int x, 
-//		int y, int clippingWidth, int clippingHeight)
-//{
-//	int clippedWidth = width - (width - clippingWidth);
-//	int clippedHeight = height - (height - clippingHeight);
-//	int bmpIndex = pixelIndex(x, y + clippingHeight - 1);
-//	int updateIndex = 0;
-//	for(int i=0; i < clippedHeight; i++)
-//	{
-//		System.arraycopy(img, updateIndex, bmp, bmpIndex, clippedWidth);
-//		updateIndex += width;
-//		bmpIndex -= this.width;
-//	}
-//}
-//-----------------------------------------------------------------------------
-//public void setCanvas(int[] img, int width, int height, int x, int y, 
-//		int clippingWidth, int clippingHeight)
-//{
-//	//System.out.println("x: " + x + " y:" + y + " width:" + width + " height:" + height + 
-//	//		" clipwidth: " + clippingWidth + " clipheight: " + clippingHeight);
-//	int clippedWidth = width - (width - clippingWidth);
-//	int clippedHeight = height - (height - clippingHeight);
-//	int bmpIndex = pixelIndex(x, y);
-//	int updateIndex = 0;
-//	for(int i=0; i < clippedHeight; i++)
-//	{
-//		System.arraycopy(img, updateIndex, bmp, bmpIndex, clippedWidth);
-//		updateIndex += width;
-//		bmpIndex += this.width;
-//	}
-//}
