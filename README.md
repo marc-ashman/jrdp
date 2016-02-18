@@ -1,8 +1,6 @@
 JRDP - A Java Remote Desktop Protocol Client Library
 ====
 
-Work originally started on Apr/10, and halted in Jan/11. I am now open sourcing this, because why not!
+I developed this as a side project in college back in 2010.
 
-Project designed for android studio and gradle, which is has recently been updated to use.
-
-The core library has a functional rdp client, but the android client needs a ton of work [this is where dev stalled].
+This is mostly a library, but also contains a pair of terrible android and awt apps.
